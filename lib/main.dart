@@ -10,7 +10,6 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await AuthApi.init();
 
-  AuthApi.init();
   runApp(
     ChangeNotifierProvider(
       create: (_) => AuthProvider()..checkAuth(),
